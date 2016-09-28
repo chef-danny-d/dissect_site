@@ -1,0 +1,299 @@
+
+.navbar-inverse{
+    background-color: rgba(223,223,223,1.0);
+    border: none;
+    overflow: hidden;
+}
+.navbar-inverse .navbar-nav>li>a{
+    color: #7F752C;
+    font-weight: bold;
+}
+.navbar-inverse .navbar-nav>li>a:hover{
+    border-bottom: #E3BC55 solid 5px;
+    color: #E3BC55;
+    background-color: transparent;
+}
+.navbar-inverse .navbar-nav>.active>a:hover{
+    background-color: transparent;
+    color: #7F752C;
+    border-bottom: #7F752C solid 5px;
+}
+.navbar-inverse .navbar-nav>.active>a{
+    background-color: transparent;
+    border-bottom: #7F752C solid 5px;
+    color: #7F752C;
+}
+.navbar-inverse .navbar-nav>li>a{
+    color: #E3BC55;
+}
+.navbar-brand img{
+    height: 400%;
+    width: auto;
+    margin-top: -35%;
+}
+@media (max-width:768px){
+    .navbar-inverse .navbar-nav>li{
+    width: 33%;
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+}
+*{
+    font-family: 'Alegreya Sans', sans-serif;
+}
+header.carousel{
+  height: 100%;
+}
+#navlog{
+    margin-top: 7px;
+    margin-left: 35px;
+}
+#first{
+    margin-right: 8px;
+}
+.container-fluid{
+    padding: 0;
+    
+}
+.row{
+    margin:0;
+}
+#features{
+    background-color: black;
+    padding: 35px 75px 35px 75px;
+}
+#features h2{
+    color: gray;
+}
+#features .btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+    margin-top: 15px; 
+}
+#features img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.page-header{
+    border: 0;  
+}
+.scroll{
+    font-size: 250%;
+    color: black;
+}
+
+.btnn{
+    background-color: transparent;
+    border: 2px solid #E3BC55;
+    border-radius: 0;
+}
+.btnn:hover{
+    background-color: #E3BC55;
+    transition: ease 1s;
+}
+#price{
+    background-color: rgba(23,43,191,0.3);
+    width: 100%;
+    height: auto;
+    padding: 50px 75px;
+    z-index: -1;
+}
+#price h2{
+    color: white;
+}
+#tabprice{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+#pricebg{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 650px;
+    z-index: -1;
+}
+.prices{
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    margin: 0px 5px 5px 5px;
+    
+}
+.pricecar ul{
+    list-style: none;
+    text-align: center;
+    left: -5px;
+    padding: 0;
+}
+.pricecar .glyphicon{
+    font-size: 250%;
+}
+.pricecar li{
+    padding: 5px;
+    border-bottom-style: dotted;
+    border-bottom-width: 1.5px;
+    border-color: rgba(0,0,0,0.2);
+    width: 66%;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 115%;
+}
+#contform{
+    background-color: #E3BC55;
+    padding: 35px;
+}
+#contform .btn{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#cont{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+#cont textarea {
+    resize: none;
+    width: 100%;
+    padding: 10px;
+}
+header.carousel .item, header.carousel .item.active, header.carousel .carousel-inner, header.carousel{
+    height: auto;
+}
+footer{
+    background-color: white;
+    height: auto;
+    width: 100%;
+    padding: 10px 50px 0px 50px;
+    margin: 0;
+}
+footer .col-md-3 p, footer .col-xs-6 p, footer .col-md-3 li, footer .col-xs-6 li{
+    text-align: center;
+    padding: 5px;
+}
+
+footer .col-md-3 ul{
+    list-style: none;
+    padding: 0px;
+}
+
+#bg {
+    position: fixed;
+    top: -125%;
+    left: -125%;
+    width: 350%;
+    height: 350%;
+    z-index: -1;
+}
+
+#img {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  margin: auto; 
+  min-width: 50%;
+  min-height: 50%;
+  z-index: -1;
+}
+.pricecar{
+    z-index: -1;
+    background-color: transparent;
+}
+@media (max-width: 768px){
+.navbar-inverse .navbar-nav>li {
+    width: 33%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+}
+@media (max-width:992px){
+    #price {
+        padding: 5px 10px;
+    }
+    #features .btn {
+        width: 50%;
+    }
+    #contform{
+        padding: 5px 10px;
+    }
+    #cont{
+        width: 75%;
+    }
+}
+
+    .sad ul{
+        padding: 0;
+        list-style: none;
+        text-align: center;
+    }
+   .sad  ul li{
+        display: inline-block;
+        position: relative;
+        line-height: 21px;
+        text-align: left;
+       padding: 0;
+    }
+    .sad  ul li:hover{
+        color: black
+    }
+   .sad  ul li a{
+        display: block;
+        padding: 8px 25px;
+        color: #333;
+        text-decoration: none;
+    }
+   .sad  ul li a:hover{
+        color: #fff;
+   }
+    .sad ul li ul.dropdown{
+        min-width: 125px; /* Set width of the dropdown */
+        display: none;
+        z-index: 999;
+        left: 0;
+    }
+   .sad  ul li:hover ul.dropdown{
+        display: block;	/* Display the dropdown */
+       margin-left: -25px;
+    }
+   .sad  ul li ul.dropdown li{
+        display: block;
+        margin-left: 15%;
+        text-align: center;
+    }
+    .dropdown li:hover{
+        color:black;
+    }
+    .dropdown li:focus{
+        color:black;
+    }
+    .dropdown li:active{
+        color:black;
+    }
+    .dropdown li:visited{
+        color:black;
+    }
+    #particles{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background: linear-gradient(rgb(206, 220, 231) 0%, rgb(89, 106, 114) 100%);
+    }
+    html, body{
+        height: 100%;
+        width: 100%;
+    }
+
