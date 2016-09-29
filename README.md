@@ -11,7 +11,7 @@
     |-- app
     |   |-- dist
     |   |   |-- template-app
-    |   |       |-- web_desktop_app
+    |   |       |-- web-desktop-app
     |   |-- fonts
     |   |-- sass
     |-- css
