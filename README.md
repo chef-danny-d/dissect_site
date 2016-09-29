@@ -4,7 +4,7 @@
   These are all the files and directories inside of the dissect app when you clone it
 
 ```
-|-- Desktop
+|-- Dissect - Site
     |-- app.py
     |-- readme.md
     |-- video.appcache
