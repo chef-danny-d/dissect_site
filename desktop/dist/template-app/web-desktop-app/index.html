@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dissect</title>
+
+    <!-- Stylesheets -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/photon.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Javascript -->
+    <script type="text/javascript">
+    window.$ = window.jQuery = require(__dirname+'/js/jquery-3.1.0.min.js');
+    </script>
+    <script src="js/menu.js"></script>
+    <script src="js.js" ></script>
+  </head>
+  <body>
+    <div class="window">
+
+      <!-- .toolbar-header sits at the top of your app -->
+
+      <!-- Your app's content goes inside .window-content -->
+      <div class="window-content">
+        <div id="overlay"></div>
+        <div class="pane-group">
+          <div class="pane pane-sm sidebar">
+            <nav class="nav-group">
+              <h5 class="nav-group-title">Your drive</h5>
+              <a href="index.html"><div id="stack"><span class="icon icon-menu"></span></div></a>
+              <a href="index_grid.html"><div id="thumb"><span class="icon icon-layout"></span></div></a>
+
+
+              <a href="upload.html">
+              <span class="nav-group-item">
+              <span class="icon icon-upload-cloud"></span>
+                Upload
+              </span></a>
+
+
+              <a href="profile.html">
+              <span class="nav-group-item">
+              <span class="icon icon-user"></span>
+                User
+              </span></a>
+
+
+              <a href="index.html">
+              <span class="nav-group-item active">
+                <span class="icon icon-home"></span>
+                Drive
+              </span></a>
+
+
+              <a href="shared.html">
+              <span class="nav-group-item">
+                <span class="icon icon-share"></span>
+                Shared
+              </span></a>
+
+
+              <a href="favorites.html">
+              <span class="nav-group-item">
+                <span class="icon icon-star"></span>
+                Favorites
+              </span></a>
+
+
+              <a href="trash.html">
+              <span class="nav-group-item">
+                <span class="icon icon-trash"></span>
+                Trash
+              </span></a>
+
+
+              <a href="settings.html">
+              <span class="nav-group-item">
+                <span class="icon icon-dot-3"></span>
+                Settings
+              </span></a>
+
+
+              <a href="upgrade.html">
+              <span class="nav-group-item">
+                <span class="icon icon-database"></span>
+                Upgrade
+              </span></a>
+
+
+            </nav>
+
+              <nav class="nav-group">
+              <h5 class="nav-group-title" id="acc_open">Account<span class="fa fa-caret-down" id="open"></span><span class="fa fa-caret-right" id="close"></span></h5>
+              <div id="acc">
+                  <span class="nav-group-item">
+                    <span class="icon icon-upload-cloud"></span>
+                    <a href="upload.html">Upload</a>
+                  </span>
+                  <span class="nav-group-item">
+                    <span class="icon icon-user"></span>
+                    <a href="profile.html">User</a>
+                  </span>
+                  <span class="nav-group-item active">
+                    <span class="icon icon-home"></span>
+                    <a href="index.html">Drive</a>
+                  </span>
+                  <span class="nav-group-item">
+                    <span class="icon icon-share"></span>
+                    <a href="shared.html">Shared</a>
+                  </span>
+                  <span class="nav-group-item">
+                    <span class="icon icon-star"></span>
+                    <a href="favorites.html">Favorites</a>
+                  </span>
+                  <span class="nav-group-item">
+                    <span class="icon icon-trash"></span>
+                    <a href="trash.html">Trash</a>
+                  </span>
+                  <span class="nav-group-item">
+                    <span class="icon icon-dot-3"></span>
+                    <a href="settings.html">Settings</a>
+                  </span>
+                  <span class="nav-group-item">
+                    <span class="icon icon-database"></span>
+                    <a href="upgrade.html">Upgrade</a>
+                  </span>
+              </div>
+            </nav>
+          </div>
+
+          <div class="pane">
+              <div id="det">
+                  <div  class="row">
+                  <img class="img-responsive col-md-4" alt="..." src="http://placehold.it/350x150" />
+                  <h5 class="col-md-8">Details of $_filename</h5>
+                  </div>
+                  <span><p>$_Size</p></span>
+                  <span><p>$_Cloud account it is stored on</p></span>
+                  <span><p>$_Date modified</p></span>
+                  <span><p>$_Modified by $_User</p></span>
+                  <div class="row" id="action">
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                      <span class="icon icon-star"><p>Favorite</p></span>
+                    </div>
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                      <span class="icon icon-trash"><p>Delete</p></span>
+                    </div>
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                      <span class="icon icon-share"><p>Share</p></span>
+                    </div>
+                  </div>
+                <span class="icon icon-cancel" id="exit"></span>
+              </div>
+            <table class="table table-striped">
+              <thead>
+                <a href="#" >
+                  <tr class="det_display">
+                    <th>Name</th>
+                    <th>Kind</th>
+                    <th>Date Modified</th>
+                    <th>Author</th>
+                  </tr>
+                </a>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>bars.scss</td>
+                  <td>Document</td>
+                  <td>Oct 13, 2015</td>
+                  <td>connors</td>
+                </tr>
+                <tr>
+                  <td>base.scss</td>
+                  <td>Document</td>
+                  <td>Oct 13, 2015</td>
+                  <td>connors</td>
+                </tr>
+                <tr>
+                  <td>button-groups.scss</td>
+                  <td>Document</td>
+                  <td>Oct 13, 2015</td>
+                  <td>connors</td>
+                </tr>
+                <tr>
+                  <td>buttons.scss</td>
+                  <td>Document</td>
+                  <td>Oct 13, 2015</td>
+                  <td>connors</td>
+                </tr>
+                <tr>
+                  <td>docs.scss</td>
+                  <td>Document</td>
+                  <td>Oct 13, 2015</td>
+                  <td>connors</td>
+                </tr>
+                <tr>
+                  <td>forms.scss</td>
+                  <td>Document</td>
+                  <td>Oct 13, 2015</td>
+                  <td>connors</td>
+                </tr>
+                <tr>
+                  <td>grid.scss</td>
+                  <td>Document</td>
+                  <td>Oct 13, 2015</td>
+                  <td>connors</td>
+                </tr>
+                <tr>
+                  <td>icons.scss</td>
+                  <td>Document</td>
+                  <td>Oct 13, 2015</td>
+                  <td>connors</td>
+                </tr>
+                <tr>
+                  <td>images.scss</td>
+                  <td>Document</td>
+                  <td>Oct 13, 2015</td>
+                  <td>connors</td>
+                </tr>
+                <tr>
+                  <td>lists.scss</td>
+                  <td>Document</td>
+                  <td>Oct 13, 2015</td>
+                  <td>connors</td>
+                </tr>
+                <tr>
+                  <td>mixins.scss</td>
+                  <td>Document</td>
+                  <td>Oct 13, 2015</td>
+                  <td>connors</td>
+                </tr>
+                <tr>
+                  <td>navs.scss</td>
+                  <td>Document</td>
+                  <td>Oct 13, 2015</td>
+                  <td>connors</td>
+                </tr>
+                <tr>
+                  <td>normalize.scss</td>
+                  <td>Document</td>
+                  <td>Oct 13, 2015</td>
+                  <td>connors</td>
+                </tr>
+                <tr>
+                  <td>photon.scss</td>
+                  <td>Document</td>
+                  <td>Oct 13, 2015</td>
+                  <td>connors</td>
+                </tr>
+                <tr>
+                  <td>tables.scss</td>
+                  <td>Document</td>
+                  <td>Oct 13, 2015</td>
+                  <td>connors</td>
+                </tr>
+                <tr>
+                  <td>tabs.scss</td>
+                  <td>Document</td>
+                  <td>Oct 13, 2015</td>
+                  <td>connors</td>
+                </tr>
+                <tr>
+                  <td>utilities.scss</td>
+                  <td>Document</td>
+                  <td>Oct 13, 2015</td>
+                  <td>connors</td>
+                </tr>
+                <tr>
+                  <td>variables.scss</td>
+                  <td>Document</td>
+                  <td>Oct 13, 2015</td>
+                  <td>connors</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+
+
+
+
+        </div>
+      </div>
+  </body>
+</html>
