@@ -1,12 +1,12 @@
-<script src="js/ui.js"></script>
+<script src="../js/ui.js"></script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
-<script src="js/jquery.js"></script>
+<script src="../js/jquery.js"></script>
 
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
 
     <!-- Script to Activate the Carousel -->
     <script>
@@ -15,7 +15,7 @@
     })
 </script>
 
-<script src="js/dropzone.js"></script>
+<script src="../js/dropzone.js"></script>
 
 <script>
 $(function() {
@@ -55,13 +55,13 @@ $("#show").click(function(){
     });
     $("#close").click(function() {
       $("#acc_nav").addClass("left").removeClass("right");
-    }); 
+    });
     $("#open").click(function() {
       $("#navimg").addClass("hide");
     });
     $("#close").click(function() {
       $("#navimg").removeClass("hide");
-    }); 
+    });
 </script>
 
 <script>
@@ -87,7 +87,7 @@ $(document).ready(function(){
 });
 
 </script>
-<script src="js/jquery.particleground.min.js"></script>
+<script src="../js/jquery.particleground.min.js"></script>
 <script>
     document.addEventListener('DOMContentLoaded', function () {
         particleground(document.getElementById('particles'), {
