@@ -1,6 +1,5 @@
 <?php include "header.php"; ?>
-
-
+<html  manifest="video.appcache">
 <?php include "nav.php"; ?>
 
 
@@ -117,13 +116,13 @@
         <div class="row">
             <h2 class="page-header text-center">FEATURES</h2>
             <div class="col-md-4">
-                <img class="img-responsive img-circle" src="img/fade.JPG">
+                <img class="img-responsive img-circle" src="../img/fade.JPG">
             </div>
             <div class="col-md-4">
-                <img class="img-responsive img-circle" src="img/fade.JPG">
+                <img class="img-responsive img-circle" src="../img/fade.JPG">
             </div>
             <div class="col-md-4">
-                <img class="img-responsive img-circle" src="img/fade.JPG">
+                <img class="img-responsive img-circle" src="../img/fade.JPG">
             </div>
         </div>
         <a href="features.php" class="btn btnn btn-default hvr-sweep-to-right">Read more</a>
@@ -187,7 +186,7 @@
 
             <div id="bg">
                 <video id="img pricebg" width="100%" autoplay loop>
-                    <source src="img/boat.mp4" type="video/mp4">
+                    <source src="../img/boat.mp4" type="video/mp4">
                     Your browser does not support HTML5 video.
                 </video>
             </div>
