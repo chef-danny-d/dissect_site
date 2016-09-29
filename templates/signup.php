@@ -32,8 +32,9 @@
 </style>
 <div id="wrapper sign">
     <img id="signimg" src="img/SynkMonster-Updated-Logo_V2_no-name.png" alt="...">
-    <form action="profile.php" method="get" enctype="application/x-www-form-urlencoded" >
-        <label style="text-align: center; width: 100%;">Name<em>*required</em></label> <input style="width: 50%; margin-left: 25%;" type="text" class="form-control" name="name" placeholder="Full Name" required><br>
+    <form action="http://localhost:4000/signup" method="post">
+        <label style="text-align: center; width: 100%;">First Name<em>*required</em></label> <input style="width: 50%; margin-left: 25%;" type="text" class="form-control" name="first-name" placeholder="John" required><br>
+        <label style="text-align: center; width: 100%;">Last Name<em>*required</em></label> <input style="width: 50%; margin-left: 25%;" type="text" class="form-control" name="last-name" placeholder="Doe" required><br>
         <label style="text-align: center; width: 100%;">E-mail<em>*required</em></label> <input style="width: 50%; margin-left: 25%;" type="text" class="form-control" name="email" placeholder="example@example.com" required><br>
         <label style="text-align: center; width: 100%;">Password<em>*required</em></label> <input style="width: 50%; margin-left: 25%;" required type="password" class="form-control" name="password" placeholder="Password"></br>
         <label style="text-align: center; width: 100%;">Re-Type Password<em>*required</em></label> <input style="width: 50%; margin-left: 25%;" required type="password" class="form-control" name="password" placeholder="Re-Type Password">
