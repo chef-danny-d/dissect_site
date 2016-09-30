@@ -19,14 +19,12 @@
     <script src="js/jquery-3.1.0.min.js" charset="utf-8"></script>
     <script src="js/menu.js"></script>
     <script src="js.js" ></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
   </head>
   <body>
     <div class="window">
 
       <!-- .toolbar-header sits at the top of your app -->
-      <header class="toolbar toolbar-header">
-        <h1 class="title">Dissect</h1>
-      </header>
 
       <!-- Your app's content goes inside .window-content -->
       <div class="window-content">
@@ -95,44 +93,6 @@
 
 
                           </nav>
-
-              <nav class="nav-group">
-              <h5 class="nav-group-title" id="acc_open">Account<span class="fa fa-caret-down" id="open"></span><span class="fa fa-caret-right" id="close"></span></h5>
-              <div id="acc">
-                  <span class="nav-group-item">
-                    <span class="icon icon-upload-cloud"></span>
-                    <a href="upload.html">Upload</a>
-                  </span>
-                  <span class="nav-group-item active">
-                    <span class="icon icon-user"></span>
-                    <a href="profile.html">User</a>
-                  </span>
-                  <span class="nav-group-item">
-                    <span class="icon icon-home"></span>
-                    <a href="index.html">Drive</a>
-                  </span>
-                  <span class="nav-group-item">
-                    <span class="icon icon-share"></span>
-                    <a href="shared.html">Shared</a>
-                  </span>
-                  <span class="nav-group-item">
-                    <span class="icon icon-star"></span>
-                    <a href="favorites.html">Favorites</a>
-                  </span>
-                  <span class="nav-group-item">
-                    <span class="icon icon-trash"></span>
-                    <a href="trash.html">Trash</a>
-                  </span>
-                  <span class="nav-group-item">
-                    <span class="icon icon-dot-3"></span>
-                    <a href="settings.html">Settings</a>
-                  </span>
-                  <span class="nav-group-item">
-                    <span class="icon icon-database"></span>
-                    <a href="upgrade.html">Upgrade</a>
-                  </span>
-              </div>
-            </nav>
           </div>
 
           <div class="pane">
@@ -157,8 +117,32 @@
                   <div class="col-md-12">
                     <span>Name:</span><span><p>$_User-name</p></span><br />
                     <span>Plan:</span><span><p>$_User-plan</p></span><br />
-                    <span>Avatar:</span><span><p>$_User-avatar</p></span>
-                    <!--...radial progress of the cloud account usage...-->
+                    <span>Avatar:</span><span><p>$_User-avatar</p></span><br />
+                    <span>Usage:</span><br />
+                    <div id="piechart" style="width: 900px; height: 500px;"></div>
+                    <script>
+                    google.charts.load('current', {'packages':['corechart']});
+                    google.charts.setOnLoadCallback(drawChart);
+                    function drawChart() {
+
+                      var data = google.visualization.arrayToDataTable([
+                        ['Task', 'Hours per Day'],
+                        ['Google Drive',     17],
+                        ['Dropbox',      10],
+                        ['Mega Upload',  63],
+                        ['One Drive', 10]
+                      ]);
+
+                      var options = {
+                        title: 'Cloud storage usage by provider'
+                      };
+
+                      var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+                      chart.draw(data, options);
+                    }
+                    </script>
+
 
                   </div>
                 </div>
