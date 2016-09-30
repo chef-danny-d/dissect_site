@@ -91,8 +91,8 @@ $(document).ready(function(){
 <script>
     document.addEventListener('DOMContentLoaded', function () {
         particleground(document.getElementById('particles'), {
-            dotColor: '#33B29A',
-            lineColor: '#5cbdaa'
+            dotColor: '#460240',
+            lineColor: '#270246'
         });
         var intro = document.getElementById('intro');
         intro.style.marginTop = - intro.offsetHeight / 2 + 'px';
