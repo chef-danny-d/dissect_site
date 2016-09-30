@@ -115,11 +115,13 @@
               <div class="container">
                 <div class="row">
                   <div class="col-md-12">
-                    <span>Name:</span><span><p>$_User-name</p></span><br />
-                    <span>Plan:</span><span><p>$_User-plan</p></span><br />
-                    <span>Avatar:</span><span><p>$_User-avatar</p></span><br />
-                    <span>Usage:</span><br />
-                    <div id="piechart" style="width: 900px; height: 500px;"></div>
+                    <div  class="col-md-4">
+                      <span>Name:</span><span><p>$_User-name</p></span><br />
+                      <span>Plan:</span><span><p>$_User-plan</p></span><br />
+                      <span>Avatar:</span><span><p>$_User-avatar</p></span><br />
+                      <span>Usage:</span><br />
+                    </div>
+                    <div  class="col-md-6" id="piechart" style="width: 50vw; height: 65vh;"></div>
                     <script>
                     google.charts.load('current', {'packages':['corechart']});
                     google.charts.setOnLoadCallback(drawChart);
@@ -142,8 +144,19 @@
                       chart.draw(data, options);
                     }
                     </script>
+                    <div class="col-md-6 col-md-offset-3">
+                      <input type="range" />
+                      <label class="col-md-6">Cloud storage partitioner 1
+                      <input type="checkbox"  class="col-md-6" name="cloud_box" /></label>
 
+                      <input type="range" />
+                      <label class="col-md-6">Cloud storage partitioner 2
+                      <input type="checkbox" class="col-md-6" name="cloud_box" /></label>
 
+                      <input type="range" />
+                      <label class="col-md-6">Cloud storage partitioner 3
+                      <input type="checkbox" class="col-md-6" name="cloud_box" /></label>
+                    </div>
                   </div>
                 </div>
               </div>
