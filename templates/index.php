@@ -28,7 +28,7 @@
     <div id="particles">
         <div id="power">
 
-            <h1>This is a <a href="home.php"><strong>POWER</strong></a> quote</h1>
+            <h1>This is a <a href="index2.html"><strong>POWER</strong></a> quote</h1>
             <h3>Yup. It sure is</h3>
 
         </div>
