@@ -19,7 +19,7 @@
     <script src="js/jquery-3.1.0.min.js" charset="utf-8"></script>
     <script src="js/menu.js"></script>
     <script src="js.js" ></script>
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
   </head>
   <body>
     <div class="window">
@@ -115,48 +115,10 @@
               <div class="container">
                 <div class="row">
                   <div class="col-md-12">
-                    <div  class="col-md-4">
                       <span>Name:</span><span><p>$_User-name</p></span><br />
                       <span>Plan:</span><span><p>$_User-plan</p></span><br />
                       <span>Avatar:</span><span><p>$_User-avatar</p></span><br />
                       <span>Usage:</span><br />
-                    </div>
-                    <div  class="col-md-6" id="piechart" style="width: 50vw; height: 65vh;"></div>
-                    <script>
-                    google.charts.load('current', {'packages':['corechart']});
-                    google.charts.setOnLoadCallback(drawChart);
-                    function drawChart() {
-
-                      var data = google.visualization.arrayToDataTable([
-                        ['Task', 'Hours per Day'],
-                        ['Google Drive',     17],
-                        ['Dropbox',      10],
-                        ['Mega Upload',  63],
-                        ['One Drive', 10]
-                      ]);
-
-                      var options = {
-                        title: 'Cloud storage usage by provider'
-                      };
-
-                      var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-
-                      chart.draw(data, options);
-                    }
-                    </script>
-                    <div class="col-md-6 col-md-offset-3">
-                      <input type="range" />
-                      <label class="col-md-6">Cloud storage partitioner 1
-                      <input type="checkbox"  class="col-md-6" name="cloud_box" /></label>
-
-                      <input type="range" />
-                      <label class="col-md-6">Cloud storage partitioner 2
-                      <input type="checkbox" class="col-md-6" name="cloud_box" /></label>
-
-                      <input type="range" />
-                      <label class="col-md-6">Cloud storage partitioner 3
-                      <input type="checkbox" class="col-md-6" name="cloud_box" /></label>
-                    </div>
                   </div>
                 </div>
               </div>

@@ -126,3 +126,6 @@ cursor: pointer;
 #acc_open span{
 	cursor: pointer;
 }
+#dissect{
+	display: none;
+}

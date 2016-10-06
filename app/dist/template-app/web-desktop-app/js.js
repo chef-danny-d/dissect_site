@@ -51,6 +51,9 @@ $(document).ready(function(){
     $(".toolbar").click(function(){
         $("#det").hide();
     });
+    $(".dropzone").click(function(){
+        $("#dissect").show();
+    });
 });
 
 $(document).ready(function(){

@@ -28,8 +28,8 @@
     <div id="particles">
         <div id="power">
 
-            <h1>This is a <a href="index2.html"><strong><em>POWER</em></strong></a> quote</h1>
-            <h3>Yup. It sure is</h3>
+            <h2>We do cloud and sh*t.</h2>
+            <h4><a href="index2.html"><em>See the magic happen</em></a></h4>
 
         </div>
     </div>
