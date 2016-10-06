@@ -1,32 +1,7 @@
 $(document).ready(function(){
-    $("#close").click(function(){
-        $("#acc").show();
+    $(function(){
+      $(".table-striped tr").addClass("det_display");
     });
-    $("#close").click(function(){
-        $("#close").hide();
-    });
-    $("#close").click(function(){
-        $("#open").show();
-    });
-    $("#open").click(function(){
-        $("#acc").hide();
-    });
-    $("#open").click(function(){
-        $("#open").hide();
-    });
-    $("#open").click(function(){
-        $("#close").show();
-    });
-
-});
-
-//$(document).ready(function(){
-//  $(function(){
-//    $(".table-striped tr").addClass("det_display");
-//  });
-//});
-
-$(document).ready(function(){
     $(".det_display").click(function(){
         $("#det").show();
     });
@@ -54,9 +29,24 @@ $(document).ready(function(){
     $(".dropzone").click(function(){
         $("#dissect").show();
     });
-});
-
-$(document).ready(function(){
+    $("#close").click(function(){
+        $("#acc").show();
+    });
+    $("#close").click(function(){
+        $("#close").hide();
+    });
+    $("#close").click(function(){
+        $("#open").show();
+    });
+    $("#open").click(function(){
+        $("#acc").hide();
+    });
+    $("#open").click(function(){
+        $("#open").hide();
+    });
+    $("#open").click(function(){
+        $("#close").show();
+    });
     $("#account_tab").click(function(){
         $("#account_tab_content").show();
     });
@@ -75,8 +65,6 @@ $(document).ready(function(){
     $("#account_tab").click(function(){
         $("#connect_tab").removeClass("active");
     });
-
-
     $("#connect_tab").click(function(){
         $("#connect_tab_content").show();
     });
@@ -95,9 +83,6 @@ $(document).ready(function(){
     $("#connect_tab").click(function(){
         $("#account_tab").removeClass("active");
     });
-
-
-
     $("#warning_tab").click(function(){
         $("#warning_tab_content").show();
     });

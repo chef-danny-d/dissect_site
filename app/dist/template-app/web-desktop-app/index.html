@@ -143,12 +143,39 @@
               <div id="det">
                   <div  class="row">
                   <img class="img-responsive col-md-4" alt="..." src="http://placehold.it/350x150" />
-                  <h5 class="col-md-8">Details of $_filename</h5>
+                  <h5 class="col-md-8">$_Filename</h5>
                   </div>
-                  <span><p>$_Size</p></span>
-                  <span><p>$_Cloud account it is stored on</p></span>
-                  <span><p>$_Date modified</p></span>
-                  <span><p>$_Modified by $_User</p></span>
+                  <div class="row">
+                  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                         <div class="col-md-12"><div id="piechart" style="width: 900px;"></div></div>
+                      <script>
+                      google.charts.load('current', {'packages':['corechart']});
+                      google.charts.setOnLoadCallback(drawChart);
+                      function drawChart() {
+
+                        var data = google.visualization.arrayToDataTable([
+                          ['Task', 'Hours per Day'],
+                          ['Google Drive',     25],
+                          ['Mediafire',      45],
+                          ['Mega',  12.5],
+                          ['Dropbox', 12],
+                          ['One Drive',    5.5]
+                        ]);
+
+                        var options = {
+                          title: 'Cloud account partitioning'
+                        };
+
+                        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+                        chart.draw(data, options);
+                      }
+                      </script>
+                  </div>
+                  <span><p>$_Total-Size</p></span>
+                  <span><p>Last modified by $_User on $_Date</p></span>
+                  <span><p><a href="#">$_Script link</a></p></span>
+                  <span><p><a href="#">$_Direct link></a></p></span>
                   <div class="row" id="action">
                     <div class="col-md-4 col-sm-12 col-xs-12">
                       <span class="icon icon-star"><p>Favorite</p></span>
