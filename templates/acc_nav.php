@@ -37,20 +37,20 @@
           <i class="fa fa-arrow-left"></i>
       </button>    
         
-      <img src="SynkMonster-Updated-Logo_V2_no-name.png" id="navimg">
+      <img src="http://d1vbiehtemnmu1.cloudfront.net/img/SynkMonster-Updated-Logo_V2_no-name.png" id="navimg">
     </div>
 
 
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
-            <li><a href="upload.php"><i class="fa fa-cloud-upload"></i> <span>Upload</span></a></li>
-            <li><a href="account.php"><i class="fa fa-folder-open"></i> <span>My Files</span></a></li>
-            <li><a href="trash.php"><i class="fa fa-trash"></i> <span>Trash</span></a></li>
-            <li><a href="recent.php"><i class="fa fa-clock-o"></i> <span>Recent</span></a></li>
-            <li><a href="important.php"><i class="fa fa-star"></i> <span>Important</span></a></li>
-            <li><a href="profile.php"><i class="fa fa-user"></i> <span>My Account</span></a></li>
-            <li><a href="settings.php"><i class="fa fa-cogs"></i> <span>Settings</span></a></li>
-            <li><a href="upgrade.php"><i class="fa fa-cart-plus"></i> <span>Upgrade</span></a></li>
+            <li><a href="upload"><i class="fa fa-cloud-upload"></i> <span>Upload</span></a></li>
+            <li><a href="account"><i class="fa fa-folder-open"></i> <span>My Files</span></a></li>
+            <li><a href="trash"><i class="fa fa-trash"></i> <span>Trash</span></a></li>
+            <li><a href="recent"><i class="fa fa-clock-o"></i> <span>Recent</span></a></li>
+            <li><a href="important"><i class="fa fa-star"></i> <span>Important</span></a></li>
+            <li><a href="profile"><i class="fa fa-user"></i> <span>My Account</span></a></li>
+            <li><a href="settings"><i class="fa fa-cogs"></i> <span>Settings</span></a></li>
+            <li><a href="upgrade"><i class="fa fa-cart-plus"></i> <span>Upgrade</span></a></li>
       </ul>
     </div>
   </div>

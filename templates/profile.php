@@ -69,7 +69,7 @@
                     <button type="submit" class="btn btn-default">Send invite</button>
                   </form>
                     <div class="col-md-3"><a href="https://twitter.com/share" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></div>
-                    <div class="fb-share-button col-md-3" data-href="http://syncmonster.io" data-layout="button" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fsyncmonster.io%2F&amp;src=sdkpreparse">Share</a></div>
+                    <div class="fb-share-button col-md-3" data-href="http://dissect.io" data-layout="button" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fsyncmonster.io%2F&amp;src=sdkpreparse">Share</a></div>
                 </div><!-- invite friends -->
                 <div class="del col-md-12">
                   <h4></h4>
@@ -77,7 +77,7 @@
                 </div><!-- delete account  -->
 
 
-        
+
         </div>
     </div>
 </body>
