@@ -12,25 +12,25 @@
     <title>SyncMonster - HOME</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/modern-business.css" rel="stylesheet">
+    <link href="../css/modern-business.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
 
     <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans' rel='stylesheet' type='text/css'>
 
-    <link href="css/dropzone.css" rel="stylesheet" type="text/css">
+    <link href="../css/dropzone.css" rel="stylesheet" type="text/css">
 
-    <link href="css/hover.css" rel="stylesheet" media="all">
+    <link href="../css/hover.css" rel="stylesheet" media="all">
 
-    <link href="css/acc_style.css" rel="stylesheet" media="all">
+    <link href="../css/acc_style.css" rel="stylesheet" media="all">
 
-    <link href="css/profile_style.css" rel="stylesheet" media="all">
+    <link href="../css/profile_style.css" rel="stylesheet" media="all">
 
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->

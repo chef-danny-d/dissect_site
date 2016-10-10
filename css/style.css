@@ -55,7 +55,7 @@ header.carousel{
 }
 .container-fluid{
     padding: 0;
-    
+
 }
 .row{
     margin:0;
@@ -72,7 +72,7 @@ header.carousel{
     margin-left: auto;
     margin-right: auto;
     width: 15%;
-    margin-top: 15px; 
+    margin-top: 15px;
 }
 #features img{
     display: block;
@@ -80,7 +80,7 @@ header.carousel{
     margin-right: auto;
 }
 .page-header{
-    border: 0;  
+    border: 0;
 }
 .scroll{
     font-size: 250%;
@@ -124,7 +124,7 @@ header.carousel{
     padding: 20px;
     text-align: center;
     margin: 0px 5px 5px 5px;
-    
+
 }
 .pricecar ul{
     list-style: none;
@@ -197,12 +197,12 @@ footer .col-md-3 ul{
 }
 
 #img {
-  position: absolute; 
-  top: 0; 
-  left: 0; 
-  right: 0; 
-  bottom: 0; 
-  margin: auto; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
   min-width: 50%;
   min-height: 50%;
   z-index: -1;
@@ -290,10 +290,9 @@ footer .col-md-3 ul{
         width: 100%;
         height: 100%;
         overflow: hidden;
-        background: linear-gradient(rgb(206, 220, 231) 0%, rgb(89, 106, 114) 100%);
+        background: linear-gradient(to left,#7b4397,#dc2430);
     }
     html, body{
         height: 100%;
         width: 100%;
     }
-
