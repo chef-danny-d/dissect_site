@@ -6,15 +6,14 @@ import json
 
 
 app = Flask(__name__, template_folder='templates')
-base_url = "http://76.21.34.185" #aws:"52.37.186.91"
-
+#base_url = "http://76.21.34.185" #aws:"52.37.186.91"
+base_url = "http://localhost:6000"
 
 def login_required(f):
     @wraps(f)
     def decorated_function(*args, **kwargs):
         try:
-            print session['token']
-
+            session['token']
         except:
             print 'token expired'
             return redirect(url_for('login', next=request.url))
@@ -78,11 +77,20 @@ def login():
 @login_required
 def logout():
     session.pop('token', None)
-    return redirect(url_for('index'))
+    return redirect(url_for('logout.html'))
 
 @app.route('/home')
 @login_required
 def home():
+
+    data = request.args.items()
+    if data != []:
+        print data[0][0]
+        r = requests.put(base_url +'/user/vd',
+                        headers={'Authorization': session['token']},
+                        data=data
+                        )
+
     return render_template('home.php')
 
 @app.route('/user')
@@ -115,6 +123,15 @@ def upload():
 def profile():
     return render_template('profile.php')
 
+@app.route('/vd')
+@login_required
+def vd():
+    nodes = request.args.get('nodes')
+    r = requests.get(base_url+'/user/vd?nodes={}'.format(nodes), headers={'Authorization': session['token']})
+    print r.text
+    return r.text
+
+
 app.secret_key = os.urandom(24)
 #app.run(host='0.0.0',port='80')
-app.run(host='localhost', port=5000)
+app.run(host='localhost',port=5000)
