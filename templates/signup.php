@@ -31,7 +31,7 @@
     }
 </style>
 <div id="wrapper sign">
-    <img id="signimg" src="img/SynkMonster-Updated-Logo_V2_no-name.png" alt="...">
+    <img id="signimg" src="../img/SynkMonster-Updated-Logo_V2_no-name.png" alt="...">
     <form method="post">
         <label style="text-align: center; width: 100%;">First Name<em>*required</em></label> <input style="width: 50%; margin-left: 25%;" type="text" class="form-control" name="first-name" placeholder="John" required><br>
         <label style="text-align: center; width: 100%;">Last Name<em>*required</em></label> <input style="width: 50%; margin-left: 25%;" type="text" class="form-control" name="last-name" placeholder="Doe" required><br>
