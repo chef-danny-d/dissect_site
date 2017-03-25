@@ -4,16 +4,18 @@ $('.items a').on('click', function() {
       $bc = $('<div class="item"></div>');
 
   $this.parents('li').each(function(n, li) {
-      var $a = $(li).children('a').clone();
-      $bc.prepend(' > ', $a);
+      var $a = $(li).children('a').clone().css("display", "inline");
+      $bc.prepend('>', $a);
   });
-    $('.breadcrumb').html( $bc.prepend('<a href="nav.php">Home</a>') );
+    $('.breadcrumb').html( $bc.prepend('<a href="nav.php" id="first-nav-item"><span>root</span></a>') );
     return false;
 })
 
 </script>
-<!--
 <script>
-  $( "#test" ).load( "test.html p" );
+  $(document).ready(function(){
+    $("#test").click(function(){
+        $("#place").load("test.html");
+    });
+});
 </script>
--->

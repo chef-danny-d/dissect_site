@@ -6,7 +6,7 @@
   height: auto;
 }
 
-nav {
+aside {
   width: 16.66666%;
   border-right: 1px gray solid;
   height: 100vh;
@@ -14,7 +14,33 @@ nav {
 }
 
 #breadcrumb {
-  width: 66.66666%;
-  margin: auto;
-  display: block;
+  width: 83.33333334%;
+  float: left;
+  height: 25px;
+  display: flex;
+  border-bottom: gray solid 0.1em;
+  align-items: center;
+}
+
+.item a {
+  color: #777;
+  padding: 0.3em 1em 0.19em 1em;
+  text-decoration: none;
+}
+
+.item a:hover {
+  background-color: #eee;
+}
+
+#default-first {
+  padding-right: 0.2em;
+}
+
+nav {
+  padding: 0rem 10rem;
+  border-bottom: gray solid 0.1em;
+}
+
+nav .pure-menu-list {
+  float: right;
 }
