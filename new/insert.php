@@ -1,8 +1,8 @@
 <?php
-$servername = "server49.hostinger.co.uk";
-$username = "u107528005_admin";
-$password = "";
-$dbname = "db_table";
+$servername = "localhost";
+$username = "root";
+$password = "root";
+$dbname = "inventory";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -10,15 +10,22 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
+/*
+- get data from form
+- covert it into string
+- send the new variable to VALUES
+- check db if entered
+*/
+$callName = $_POST["email"];
+$callName = mysqli_real_escape_string($callName);
 
-$sql = "INSERT INTO db_table (firstname, lastname, email)
-VALUES ('John', 'Doe', 'john@example.com')";
+$sql  = 'INSERT INTO `test_tb` (`name`, `id`, `pass`, `uname`) VALUES (\'$callName\', \'1234\', \'password\', \'admin\')';
 
-if ($conn->query($sql) === TRUE) {
-    echo "New record created successfully";
+if (mysqli_query($conn, $sql)) {
+    echo "New record created successfully....";
 } else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
+    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
+mysqli_close($conn);
 
-$conn->close();
 ?>
