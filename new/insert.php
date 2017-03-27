@@ -1,31 +1,21 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "root";
-$dbname = "inventory";
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-/*
-- get data from form
-- covert it into string
-- send the new variable to VALUES
-- check db if entered
-*/
-$callName = $_POST["email"];
-$callName = mysqli_real_escape_string($callName);
+include 'var.php';
+include 'connect.php';
+$callName = $_POST["name"];
+$callUname = $_POST["uname"];
+$callId = $_POST["id"];
+$callPass= $_POST["pass"];
 
-$sql  = 'INSERT INTO `test_tb` (`name`, `id`, `pass`, `uname`) VALUES (\'$callName\', \'1234\', \'password\', \'admin\')';
+$sql  = "INSERT INTO test_tb (name, id, pass, uname) VALUES ('$callName', '$callId', '$callPass', '$callUname')";
 
 if (mysqli_query($conn, $sql)) {
     echo "New record created successfully....";
+    echo "Redirecting...";
 } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
+header("refresh:1; url=fetch.php");
 mysqli_close($conn);
 
 ?>
