@@ -2,12 +2,12 @@
 
 include 'var.php';
 include 'connect.php';
-$callName = $_POST["name"];
-$callUname = $_POST["uname"];
-$callId = $_POST["id"];
-$callPass= $_POST["pass"];
+$first = $_POST['first'];
+$last = $_POST['last'];
+$uid = $_POST['uid'];
+$password = $_POST['password'];
 
-$sql  = "INSERT INTO test_tb (name, id, pass, uname) VALUES ('$callName', '$callId', '$callPass', '$callUname')";
+$sql  = "INSERT INTO user (first, last, uid, password) VALUES ('$first', '$last', '$uid', '$password')";
 
 if (mysqli_query($conn, $sql)) {
     echo "New record created successfully....";
@@ -15,7 +15,7 @@ if (mysqli_query($conn, $sql)) {
 } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
-header("refresh:1; url=fetch.php");
+header("Location: fetch.php");
 mysqli_close($conn);
 
 ?>

@@ -21,7 +21,7 @@
             </ul>
         </li>
         <li class="pure-menu-item"><a href="#" class="pure-menu-link">Download</a></li>
-        <li class="pure-menu-item"><a href="#" class="pure-menu-link">Login</a></li>
-        <li class="pure-menu-item"><a href="#" class="pure-menu-link">Sign up</a></li>
+        <li class="pure-menu-item"><a href="sign.php" class="pure-menu-link">Login</a></li>
+        <li class="pure-menu-item"><a href="register.php" class="pure-menu-link">Sign up</a></li>
     </ul>
 </nav>
