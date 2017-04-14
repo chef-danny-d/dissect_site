@@ -1,3 +1,4 @@
+<meta http-equiv="refresh" content="0; url=http://localhost:8888/new/profile.php" />
 <?php
 
 include 'var.php';
@@ -15,7 +16,6 @@ if (mysqli_query($conn, $sql)) {
 } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
-header("Location: fetch.php");
 mysqli_close($conn);
 
 ?>

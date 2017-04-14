@@ -1,28 +1,26 @@
 <?php
+session_start();
+include "funtion.php" ;
+auth();
+include "head.php";
+include "menu.php";
+include "nav.php";
+include "bread.php";
+include "script.php";
+include "footer.php";
 include 'var.php';
 include 'connect.php';
-
-mysqli_select_db($dbname) or die("no db :'(");
-$query = mysqli_query("SELECT * FROM $tablename WHERE username='$user'");
-
-$numrows = mysqli_num_rows($query);
-
-
-if ($numrows!=0)
-{
-//while loop
-  while ($row = mysql_fetch_assoc($query))
-  {
-    $dbusername = $row['username'];
-    $dbpassword = $row['password'];
-  }
-  else
-      die("incorrect username/password!");
-}
-else
-  echo "user does not exist!";
-}
-else
-    die("please enter a username and password!");
-
+echo $_SESSION['uid'];
 ?>
+<form>
+  <label>username:</label>
+  <input type="text" placeholder="<?php echo $_SESSION['uid']; ?>"/>
+
+  <label>new password:</label>
+  <input type="password" placeholder="<?php echo $_SESSION['pass']; ?>"/>
+
+  <label>re password:</label>
+  <input type="password" placeholder="<?php echo $_SESSION['pass']; ?>"/>
+
+  <button type="submit">Update</button>
+</form>

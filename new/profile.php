@@ -1,5 +1,6 @@
 <?php
 session_start();
+header("location:user_profile.php");
 include "head.php";
 include "menu.php";
 include "nav.php";
@@ -15,9 +16,10 @@ $sql  = "SELECT * FROM user WHERE uid='$uid' AND password='$password'";
 $result = $conn->query($sql);
 
 if (!$row = mysqli_fetch_assoc($result)){
-  echo "Your username or password is incorrect";
+  echo "Password or username incorrect";
 }
-else {
-  echo "Welcome $uid";
+else{
+  $_SESSION['uid'] = $row['uid'];
+  $_SESSION['pass'] = $row['password'];
 }
 ?>
