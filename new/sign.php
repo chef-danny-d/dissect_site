@@ -1,5 +1,8 @@
 <?php
 session_start();
+if ($_SESSION['uid']){
+    header("location:user_profile.php");
+}
 include "head.php";
 include "menu.php";
 include "nav.php";
@@ -26,5 +29,13 @@ if(isset($_SESSION['uid'])){
 }
 else{
   echo "You are not logged in";
+}
+if(isset($_SESSION['passVar'])){
+    $passVar = false ;
+    $_SESSION['passVar'] = $passVar['pass'];
+    echo "\nYour password or username isn't matching in our database. Please try again ";
+}
+else{
+    unset($passVar);
 }
 ?>

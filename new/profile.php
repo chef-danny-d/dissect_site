@@ -16,10 +16,11 @@ $sql  = "SELECT * FROM user WHERE uid='$uid' AND password='$password'";
 $result = $conn->query($sql);
 
 if (!$row = mysqli_fetch_assoc($result)){
-  echo "Password or username incorrect";
+  $_SESSION['passVar'] = true;
 }
 else{
   $_SESSION['uid'] = $row['uid'];
   $_SESSION['pass'] = $row['password'];
+  $_SESSION['passVar'] = false;
 }
 ?>
