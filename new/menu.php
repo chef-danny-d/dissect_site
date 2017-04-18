@@ -2,20 +2,20 @@
     <a href="#" class="pure-menu-heading pure-menu-link">DISSECT</a>
     <ul class="pure-menu-list">
         <li class="pure-menu-item"><a href="upload.php" class="pure-menu-link">Upload</a></li>
-        <li class="pure-menu-item pure-menu-selected"><a href="#" class="pure-menu-link">Files</a></li>
-        <li class="pure-menu-item"><a href="#" class="pure-menu-link">Trash</a></li>
-        <li class="pure-menu-item"><a href="#" class="pure-menu-link">Shared</a></li>
+        <li class="pure-menu-item pure-menu-selected"><a href="drive.php" class="pure-menu-link">Files</a></li>
+        <li class="pure-menu-item"><a href="trash.php" class="pure-menu-link">Trash</a></li>
+        <li class="pure-menu-item"><a href="share.php" class="pure-menu-link">Shared</a></li>
         <li class="pure-menu-item pure-menu-has-children">
-            <a href="#menu5" id="menuLink1" class="pure-menu-link"><span class="menu-item">Settings</span></a>
+            <a href="settings.php" id="menuLink1" class="pure-menu-link"><span class="menu-item">Settings</span></a>
             <ul class="pure-menu-children">
-                <li class="pure-menu-item"><a href="#level1" class="pure-menu-link"><span class="menu-item">Billing</span></a></li>
-                <li class="pure-menu-item"><a href="#level2" class="pure-menu-link"><span class="menu-item">Drive</span></a></li>
+                <li class="pure-menu-item"><a href="billing.php" class="pure-menu-link"><span class="menu-item">Billing</span></a></li>
+                <li class="pure-menu-item"><a href="drive_conf.php" class="pure-menu-link"><span class="menu-item">Drive</span></a></li>
                 <li class="pure-menu-item pure-menu-has-children">
-                    <a href="#" id="menuLink1" class="pure-menu-link"><span class="menu-item">Account</span></a>
+                    <a href="account.php" id="menuLink1" class="pure-menu-link"><span class="menu-item">Account</span></a>
                     <ul class="pure-menu-children">
-                        <li class="pure-menu-item"><a href="#level3" class="pure-menu-link"><span class="menu-item">Notifications</span></a></li>
-                        <li class="pure-menu-item"><a href="#level4" class="pure-menu-link"><span class="menu-item">Privacy</span></a></li>
-                        <li class="pure-menu-item"><a href="#level5" class="pure-menu-link"><span class="menu-item">Preferences</span></a></li>
+                        <li class="pure-menu-item"><a href="notification.php" class="pure-menu-link"><span class="menu-item">Notifications</span></a></li>
+                        <li class="pure-menu-item"><a href="privacy.php" class="pure-menu-link"><span class="menu-item">Privacy</span></a></li>
+                        <li class="pure-menu-item"><a href="pref.php" class="pure-menu-link"><span class="menu-item">Preferences</span></a></li>
                     </ul>
                 </li>
             </ul>

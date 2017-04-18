@@ -12,6 +12,3 @@ include 'var.php';
 include 'connect.php';
 echo $_SESSION['uid'];
 ?>
-<form action="put.php" class="dropzone" id="drop" enctype="multipart/form-data">
-
-</form>
