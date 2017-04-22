@@ -22,9 +22,11 @@
         </li>
         <li class="pure-menu-item"><a href="#" class="pure-menu-link">Download</a></li>
         <?php
-        if(isset($_SESSION['uid'])){
+        if(isset($_SESSION['id'])){
+            echo"<a href='user_profile.php'>";
           echo "You are logged in as: ";
-          echo $_SESSION['uid'];
+          echo $_SESSION['id'];
+            echo "</a>";
           echo "<li class='pure-menu-item'>";
           echo "<a href='logout.php' class='pure-menu-link'>";
           echo "Logout";

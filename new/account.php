@@ -1,7 +1,6 @@
 <?php
 session_start();
 include "funtion.php" ;
-auth();
 include "head.php";
 include "menu.php";
 include "nav.php";

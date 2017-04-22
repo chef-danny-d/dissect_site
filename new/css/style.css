@@ -1,5 +1,11 @@
+/*GENERAL*/
+.main-cont{
+    width: 83.3333333%;
+    margin-left: 16.666666%;
+    padding: 5% 0% 5% 0%;
+}
+/*GENERAL END*/
 /*NAV*/
-
 .pure-menu-item {
     padding: 0;
     margin: 0;
@@ -44,10 +50,8 @@ nav {
 nav .pure-menu-list {
     float: right;
 }
-
-
 /*NAV END*/
-
+/*DROPZONE*/
 form .dropzone.dz-clickable {
     width: 83.3333333%;
     position: relative;
@@ -57,4 +61,14 @@ form .dropzone.dz-clickable {
     border-right: 0;
     background-color: gray;
     background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255, 255, 255, .5) 35px, rgba(255, 255, 255, .5) 70px);
+}
+.dropzone .dz-preview .dz-details .dz-filename {
+    white-space: nowrap;
+    overflow: hidden;
+}
+/*DROPZONE END*/
+{
+    width: 2em ;
+    border: 0 ;
+    padding: 0 ;
 }
