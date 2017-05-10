@@ -1,6 +1,6 @@
 <?php
 session_start();
-header("location: user_profile.php");
+header("location: reg2.php");
 include 'var.php';
 include 'connect.php';
 $first = $_POST['first'];

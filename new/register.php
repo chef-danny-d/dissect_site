@@ -1,13 +1,12 @@
 <?php
 session_start();
-include "head.php";
-include "menu.php";
-include "nav.php";
-include "bread.php";
-include "script.php";
-include "footer.php";
+include_once "head.php";
+include_once "menu.php";
+include_once "nav.php";
+include_once "bread.php";
+include_once "script.php";
 ?>
-<div id="wrapper sign">
+<div id="wrapper sign" class="main-cont">
     <form method="post" action="insert.php">
         <label style="text-align: center; width: 100%;">First name</label>
         <input required style="width: 50%; margin-left: 25%;" type="text" class="form-control" name="first" placeholder="First" required><br>
@@ -23,6 +22,7 @@ include "footer.php";
 
         <label style="text-align: center; width: 100%;">Password</em></label>
         <input required style="width: 50%; margin-left: 25%;" type="password" class="form-control" name="re-password" placeholder="Re-Password" required><br>
-        <button style="width: 50%; margin-left: 25%; margin-top: 1.5em;" type="submit" class="btn btn-default">Register</button>
+        <button type="submit">Next step</button>
     </form>
 </div>
+<?php include_once "footer.php"; ?>

@@ -21,8 +21,7 @@ include "footer.php";
     </form>
 </div>
 <?php
-$ip = $_SERVER['REMOTE_ADDR'];
-echo $ip;
+
 if(isset($_SESSION['uid'])){
   echo $_SESSION['uid'];
 }
