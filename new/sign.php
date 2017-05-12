@@ -1,6 +1,6 @@
 <?php
 session_start();
-if ($_SESSION['uid']){
+if ($_SESSION['uid']){//redirect if user is logged in
     header("location:user_profile.php");
 }
 include "head.php";
@@ -23,14 +23,14 @@ include "footer.php";
 <?php
 
 if(isset($_SESSION['uid'])){
-  echo $_SESSION['uid'];
+  echo $_SESSION['uid'];//displays username if there is any in the session
 }
 if(isset($_SESSION['passVar'])){
-    $passVar = false ;
-    $_SESSION['passVar'] = $passVar['pass'];
-    echo "\nYour password or username isn't matching in our database. Please try again ";
+    $passVar = false ;//sets password variable false as default which will be used in profile.php
+    $_SESSION['passVar'] = $passVar['pass'];//makes the variable into a session so it can be accessible locally
+    echo "\nYour password or username isn't matching in our database. Please try again ";//error handling
 }
 else{
-    unset($passVar);
+    unset($passVar);//sets null for the variable
 }
 ?>

@@ -93,7 +93,7 @@ include "connect.php";
             <input type="text" id="textInputEight" name="textInputEight" value="0">
         </label>
         <br>
-        <button type="submit">Register</button>
+        <button type="submit">Upload</button>
     </form>
 </section>
 <?php include_once "footer.php"; ?>

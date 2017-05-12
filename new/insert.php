@@ -1,6 +1,6 @@
 <?php
 session_start();
-header("location: reg2.php");
+header("location: user_profile.php");
 include 'var.php';
 include 'connect.php';
 $first = $_POST['first'];
@@ -10,14 +10,14 @@ $password = $_POST['password'];
 
 $sql  = "INSERT INTO $tablename (first, last, uid, password) VALUES ('$first', '$last', '$uid', '$password')";
 
-if (mysqli_query($conn, $sql)) {
+if (mysqli_query($conn, $sql)) {//this happens if it's correct
     echo "New record created successfully....";
     echo "Redirecting...";
     $_SESSION['uid'] = $uid;
     $_SESSION['pass'] = $password;
-} else {
+} else {//error handling
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
-mysqli_close($conn);
+mysqli_close($conn);//closing connection
 
 ?>
